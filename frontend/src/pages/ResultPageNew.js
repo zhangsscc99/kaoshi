@@ -41,13 +41,6 @@ function ResultPageNew() {
 
           {/* 右侧结果信息 */}
           <div className="result-section">
-          {/* Fail 印章 */}
-          <div className="stamp">
-            <div className="stamp-inner">
-              <span className="stamp-text">Fail</span>
-            </div>
-          </div>
-
           {/* 结果标题 */}
           <h3 className="result-heading">未通过，继续努力吧~</h3>
 

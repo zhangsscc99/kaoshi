@@ -15,7 +15,7 @@ function ResultPage() {
     <div className="result-page">
       {/* 顶部标题栏 */}
       <header className="header">
-        <h1 className="header-title">上机编程认证科目-iLearning（入门级，Java）</h1>
+        <h1 className="header-title">上机编程认证科目-iLearning（工作级， Python）</h1>
         <button className="exit-button" onClick={handleExit}>退出</button>
       </header>
 
@@ -41,13 +41,6 @@ function ResultPage() {
 
           {/* 右侧结果信息 */}
           <div className="result-section">
-          {/* Fail 印章 */}
-          <div className="stamp">
-            <div className="stamp-inner">
-              <span className="stamp-text">Fail</span>
-            </div>
-          </div>
-
           {/* 结果标题 */}
           <h3 className="result-heading">考试结束，阅卷中</h3>
 
