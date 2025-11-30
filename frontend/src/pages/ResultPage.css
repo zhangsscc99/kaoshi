@@ -1,19 +1,361 @@
 .result-page {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  min-height: 100vh;
+  background: #FAFAFA;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.result-image {
+/* 顶部标题栏 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F0F0F0;
+  position: relative;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.exit-button {
+  padding: 6px 24px;
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #666666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exit-button:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+/* 内容卡片 */
+.content-card {
+  max-width: 1300px;
+  margin: 50px auto 40px;
+  padding: 40px 80px 60px;
+  background: #FFFFFF;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 10;
+}
+
+/* 标题行 */
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+.student-info {
+  font-size: 13px;
+  color: #999999;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* 主要内容区 */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  padding: 0 20px;
+}
+
+/* 插图区域 */
+.illustration-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.illustration-wrapper {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.person-image {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+/* 结果信息区域 */
+.result-section {
+  flex: 1;
+  position: relative;
+  padding-top: 0;
+  max-width: 500px;
+}
+
+/* Fail 印章 */
+.stamp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  animation: stampAppear 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes stampAppear {
+  0% {
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(-18deg);
+  }
+  100% {
+    transform: scale(1) rotate(-20deg);
+    opacity: 1;
+  }
+}
+
+.stamp-inner {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #FFB4BC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-20deg);
+  background: rgba(255, 180, 188, 0.05);
+}
+
+.stamp-text {
+  font-size: 42px;
+  font-weight: bold;
+  color: #FFB4BC;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+/* 结果标题 */
+.result-heading {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 50px 0;
+  letter-spacing: 0.5px;
+  padding-right: 150px;
+}
+
+/* 详细信息 */
+.result-details {
+  margin: 40px 0 50px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.detail-label {
+  color: #666666;
+  min-width: 100px;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.detail-value {
+  color: #333333;
+  font-weight: 400;
+}
+
+.detail-value.failed {
+  color: #666666;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* 考试报告按钮 */
+.report-button {
+  margin-top: 40px;
+  padding: 10px 50px;
+  background: transparent;
+  border: 1px solid #FF8C94;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #FF8C94;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.report-button:hover {
+  background: #FF8C94;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 140, 148, 0.3);
+}
+
+/* 鼓励语（在插图下方） */
+.encouragement {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  width: 100%;
+  max-width: 450px;
+  padding: 0 20px;
+  line-height: 1.8;
+}
+
+/* 水印层 */
+.watermark-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: visible;
+}
+
+.watermark-text {
+  position: absolute;
+  font-size: 16px;
+  color: #E8E8E8;
+  opacity: 0.6;
+  white-space: nowrap;
+  user-select: none;
+  font-weight: 300;
+  transform: rotate(-15deg);
+}
+
+.watermark-text:nth-child(1) { top: 5%; left: 5%; }
+.watermark-text:nth-child(2) { top: 5%; left: 28%; }
+.watermark-text:nth-child(3) { top: 5%; left: 51%; }
+.watermark-text:nth-child(4) { top: 5%; left: 74%; }
+
+.watermark-text:nth-child(5) { top: 20%; left: 15%; }
+.watermark-text:nth-child(6) { top: 20%; left: 38%; }
+.watermark-text:nth-child(7) { top: 20%; left: 61%; }
+.watermark-text:nth-child(8) { top: 20%; left: 84%; }
+
+.watermark-text:nth-child(9) { top: 35%; left: 5%; }
+.watermark-text:nth-child(10) { top: 35%; left: 28%; }
+.watermark-text:nth-child(11) { top: 35%; left: 51%; }
+.watermark-text:nth-child(12) { top: 35%; left: 74%; }
+
+.watermark-text:nth-child(13) { top: 50%; left: 15%; }
+.watermark-text:nth-child(14) { top: 50%; left: 38%; }
+.watermark-text:nth-child(15) { top: 50%; left: 61%; }
+.watermark-text:nth-child(16) { top: 50%; left: 84%; }
+
+.watermark-text:nth-child(17) { top: 65%; left: 5%; }
+.watermark-text:nth-child(18) { top: 65%; left: 28%; }
+.watermark-text:nth-child(19) { top: 65%; left: 51%; }
+.watermark-text:nth-child(20) { top: 65%; left: 74%; }
+
+.watermark-text:nth-child(21) { top: 80%; left: 15%; }
+.watermark-text:nth-child(22) { top: 80%; left: 38%; }
+.watermark-text:nth-child(23) { top: 80%; left: 61%; }
+.watermark-text:nth-child(24) { top: 80%; left: 84%; }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .content-card {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .stamp {
+    right: 20px;
+  }
+
+  .result-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header-title {
+    font-size: 14px;
+  }
+
+  .content-card {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .student-info {
+    align-self: flex-end;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .illustration-wrapper {
+    max-width: 100%;
+  }
+
+  .person-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .stamp {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stamp-text {
+    font-size: 32px;
+  }
+
+  .result-heading {
+    font-size: 22px;
+    padding-right: 110px;
+  }
 }

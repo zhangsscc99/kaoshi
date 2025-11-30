@@ -41,13 +41,15 @@ npm start
 
 启动应用后，可以通过以下URL访问不同页面：
 
-### 使用原图版本
-- 阅卷页面：`http://localhost:3000/grading`
-- 结果页面：`http://localhost:3000/result`
+### 主要页面（手写还原版本，使用用户插图）
+- **阅卷页面**：`http://localhost:3000/grading` ⭐
+- **结果页面**：`http://localhost:3000/result` ⭐
 
-### 手写还原版本
-- 阅卷页面（手写）：`http://localhost:3000/grading-new`
-- 结果页面（手写）：`http://localhost:3000/result-new`
+### 备用页面
+- 阅卷页面（备用）：`http://localhost:3000/grading-new`
+- 结果页面（备用）：`http://localhost:3000/result-new`
+
+> **说明**：主要页面使用手写代码完全还原了原设计，结果页面的插图使用了用户提供的定制图片（女生在电脑前工作）。
 
 ## 技术栈
 
