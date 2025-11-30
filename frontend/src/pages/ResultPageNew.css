@@ -1,0 +1,321 @@
+.result-page-new {
+  min-height: 100vh;
+  background: #F5F5F5;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 顶部标题栏 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E5E5E5;
+  position: relative;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+.exit-button {
+  padding: 8px 28px;
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exit-button:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+/* 主容器 */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+.right-section {
+  flex: 0;
+}
+
+.student-info {
+  font-size: 14px;
+  color: #999999;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* 内容卡片 */
+.content-card {
+  max-width: 1200px;
+  margin: 20px auto 40px;
+  padding: 50px 60px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+/* 插图区域 */
+.illustration-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-wrapper {
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 结果信息区域 */
+.result-section {
+  flex: 1;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* Fail 印章 */
+.stamp {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  width: 110px;
+  height: 110px;
+  animation: stampAppear 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes stampAppear {
+  0% {
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(-18deg);
+  }
+  100% {
+    transform: scale(1) rotate(-20deg);
+    opacity: 1;
+  }
+}
+
+.stamp-inner {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #FF4D4F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-20deg);
+  background: rgba(255, 77, 79, 0.03);
+}
+
+.stamp-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: #FF4D4F;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* 结果标题 */
+.result-heading {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 35px 0;
+  letter-spacing: 0.5px;
+}
+
+/* 详细信息 */
+.result-details {
+  margin: 30px 0 40px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.detail-label {
+  color: #666666;
+  min-width: 95px;
+  margin-right: 8px;
+}
+
+.detail-value {
+  color: #333333;
+  font-weight: 500;
+}
+
+.detail-value.failed {
+  color: #FF4D4F;
+}
+
+/* 考试报告按钮 */
+.report-button {
+  margin-top: 35px;
+  padding: 10px 45px;
+  background: transparent;
+  border: 2px solid #FF6B6B;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #FF6B6B;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.report-button:hover {
+  background: #FF6B6B;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.25);
+}
+
+/* 底部鼓励语 */
+.encouragement {
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  padding: 30px 0 50px;
+  position: relative;
+  z-index: 10;
+}
+
+/* 水印层 */
+.watermark-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  gap: 100px;
+  padding: 50px;
+  transform: rotate(-25deg);
+}
+
+.watermark-text {
+  font-size: 16px;
+  color: #CCCCCC;
+  opacity: 0.08;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .content-card {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .stamp {
+    right: 20px;
+  }
+
+  .result-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header-title {
+    font-size: 16px;
+  }
+
+  .main-container {
+    padding: 20px 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .right-section {
+    align-self: flex-end;
+  }
+
+  .content-card {
+    margin: 10px 20px 30px;
+    padding: 30px 20px;
+  }
+
+  .illustration-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .illustration-wrapper svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .stamp {
+    width: 90px;
+    height: 90px;
+    right: 10px;
+    top: -10px;
+  }
+
+  .stamp-text {
+    font-size: 28px;
+  }
+
+  .result-heading {
+    font-size: 22px;
+  }
+}
+

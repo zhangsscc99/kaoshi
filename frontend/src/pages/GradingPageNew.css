@@ -1,0 +1,163 @@
+.grading-page-new {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F8F9FB 0%, #ECEEF2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 页面头部 */
+.page-header {
+  padding: 30px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #B8B8C0;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* 中心内容 */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+/* 加载动画 */
+.loading-animation {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #FFB4C4;
+  border-radius: 50%;
+  animation: dotBounce 1.4s infinite ease-in-out both;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+  background: #FFB4C4;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+  background: #FFC4D0;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0s;
+  background: #FFD4DC;
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 主标题 */
+.main-title {
+  font-size: 32px;
+  font-weight: 300;
+  color: #C8C8D0;
+  margin: 0 0 50px 0;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* 插图区域 */
+.illustration {
+  margin: 20px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 考试用时 */
+.exam-time {
+  font-size: 15px;
+  color: #D8D8DE;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.time-label {
+  color: #D8D8DE;
+}
+
+.time-value {
+  color: #D8D8DE;
+  margin-left: 3px;
+}
+
+/* 底部提示文字 */
+.bottom-text {
+  font-size: 13px;
+  color: #E8E8EA;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 20px 30px;
+  }
+
+  .header-title {
+    font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .illustration svg {
+    width: 350px;
+    height: auto;
+  }
+
+  .center-content {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 22px;
+  }
+
+  .illustration svg {
+    width: 300px;
+    height: auto;
+  }
+
+  .exam-time {
+    font-size: 14px;
+  }
+
+  .bottom-text {
+    font-size: 12px;
+  }
+}
+
