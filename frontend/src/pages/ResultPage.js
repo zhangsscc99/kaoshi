@@ -35,7 +35,7 @@ function ResultPage() {
               <img src={personIllustration} alt="工作中的人物" className="person-image" />
             </div>
             <div className="encouragement">
-              别灰心呦，失败乃成功之母，再考一次就过啦！
+              阅卷中，请耐心等待
             </div>
           </div>
 
@@ -49,21 +49,14 @@ function ResultPage() {
           </div>
 
           {/* 结果标题 */}
-          <h3 className="result-heading">未通过，继续努力吧~</h3>
+          <h3 className="result-heading">考试结束，阅卷中</h3>
 
           {/* 详细信息 */}
           <div className="result-details">
-            <div className="detail-row">
-              <span className="detail-label">是否通过：</span>
-              <span className="detail-value failed">未通过</span>
-            </div>
-            <div className="detail-row">
-              <span className="detail-label">编程题数：</span>
-              <span className="detail-value">2</span>
-            </div>
+            
             <div className="detail-row">
               <span className="detail-label">考试用时：</span>
-              <span className="detail-value">43分钟 / 125分钟</span>
+              <span className="detail-value">43分钟 / 185分钟</span>
             </div>
           </div>
 
