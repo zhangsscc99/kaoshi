@@ -49,7 +49,7 @@ function ResultPage() {
             
             <div className="detail-row">
               <span className="detail-label">考试用时：</span>
-              <span className="detail-value">43分钟 / 185分钟</span>
+              <span className="detail-value">31分钟25秒 / 185分钟</span>
             </div>
           </div>
 
