@@ -4,7 +4,7 @@ import personIllustration from '../images/person_illustration.png';
 
 function ResultPageNew() {
   const handleExit = () => {
-    alert('退出功能');
+    window.location.href = 'https://ilearning.huawei.com/iexam/100000/examResult?examId=52919&examResultId=1993629658122309633&sessionId=1967871794771128322';
   };
 
   const handleReport = () => {
