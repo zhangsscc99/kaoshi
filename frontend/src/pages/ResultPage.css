@@ -20,11 +20,14 @@
 }
 
 .header-title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 900;
   color: #333333;
   margin: 0;
   line-height: 1.5715;
+  font-family: 'PingFang SC', 'Microsoft YaHei', '微软雅黑', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans GB', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0.2px 0 0 #333333, -0.2px 0 0 #333333, 0 0.2px 0 #333333, 0 -0.2px 0 #333333;
 }
 
 .exit-button {
@@ -39,8 +42,8 @@
 }
 
 .exit-button:hover {
-  border-color: #40a9ff;
-  color: #40a9ff;
+  border-color: #333333;
+  color: #333333;
 }
 
 /* 内容卡片 */
@@ -66,7 +69,7 @@
 
 .page-title {
   font-size: 18px !important;
-  font-weight: 400;
+  font-weight: 600;
   color: #333333;
   margin: 0;
   line-height: 1.5;
