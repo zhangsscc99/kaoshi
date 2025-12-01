@@ -49,8 +49,8 @@
 /* 内容卡片 */
 .content-card {
   max-width: 1300px;
-  margin: 50px auto 40px;
-  padding: 40px 80px 60px;
+  margin: 30px auto 40px;
+  padding: 30px 80px 60px;
   background: #FFFFFF;
   border-radius: 0;
   box-shadow: none;
@@ -178,7 +178,7 @@
 
 /* 结果标题 */
 .result-heading {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   color: #333333;
   margin: 0 0 50px 0;
@@ -230,7 +230,7 @@
   color: #FF8C94;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .report-button:hover {
@@ -249,6 +249,7 @@
   max-width: 450px;
   padding: 0 20px;
   line-height: 1.5715;
+  font-weight: 500;
 }
 
 /* 水印层 */
