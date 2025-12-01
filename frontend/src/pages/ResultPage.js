@@ -21,6 +21,34 @@ function ResultPage() {
 
       {/* 中心内容卡片 */}
       <div className="content-card">
+        {/* 水印背景 */}
+        <div className="watermark-layer">
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+          <div className="watermark-text">王宇庭 00937128</div>
+        </div>
+
         {/* 标题行 */}
         <div className="title-row">
           <h2 className="page-title">考试结果</h2>
@@ -59,34 +87,6 @@ function ResultPage() {
           </button>
         </div>
         </div>
-      </div>
-
-      {/* 水印背景 */}
-      <div className="watermark-layer">
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
-        <div className="watermark-text">王宇庭 00937128</div>
       </div>
     </div>
   );
