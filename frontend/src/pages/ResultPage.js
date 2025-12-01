@@ -15,8 +15,10 @@ function ResultPage() {
     <div className="result-page">
       {/* 顶部标题栏 */}
       <header className="header">
-        <h1 className="header-title">上机编程认证科目-iLearning（工作级， Python）</h1>
-        <button className="exit-button" onClick={handleExit}>退出</button>
+        <div className="header-container">
+          <h1 className="header-title">上机编程认证科目-iLearning（工作级， Python）</h1>
+          <button className="exit-button" onClick={handleExit}>退出</button>
+        </div>
       </header>
 
       {/* 中心内容卡片 */}

@@ -9,14 +9,22 @@
 
 /* 顶部标题栏 */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 60px;
   background: #FFFFFF;
   border-bottom: 1px solid #F0F0F0;
   position: relative;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0;
 }
 
 .header-title {
@@ -329,7 +337,11 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 15px 20px;
+    padding: 15px 0;
+  }
+
+  .header-container {
+    padding: 0 20px;
   }
 
   .header-title {
